@@ -8,28 +8,25 @@ body {
 	background-color: hsla(164,50%,95%,1.00)
 }
 #wrapper{
-	max-width:1250px;width: 90%;
+	min-width: 600px;
+	width: 90%;
 	margin: auto;
 	background-color: hsla(90,30%,98%,1.00);
 }
+
 header {
 	background-color: hsla(180,82%,98%,1.00);
-	border: 1px solid gray;
+	border-bottom: 1px solid lightgray;
 	padding: 2em;
 }
-h1,h2{
-	font-weight: 300;
-		padding-left: 1em;
-}
-h3 {
-	font-weight: 500;
-}
+
 /*
 ==========--Menu--==========
 							*/	
 nav {
+	position: relative;
 	margin: 0;
-	border-bottom: 2px gray solid;
+	border-bottom: 2px hsla(0,0%,88%,1.00) solid;
 }
 nav ul {
 	display: inline-block;
@@ -59,4 +56,51 @@ nav a[href*="top"] {
 	top:1%;
 	left: 1%;
 	color: gray;
+}
+nav > a {
+	float: right;
+	margin: 1em;
+	color: darkgray;
+	text-decoration: none;
+}
+/*
+==========--Main--==========
+							*/	
+main {
+	padding: 1em; 
+}
+h1,h2{
+	font-weight: 300;
+	padding-left: 1em;
+}
+h3 {
+	font-weight: 500;
+	font-size: 1.5em;
+}
+h4 {
+	font-weight: 500;
+	font-size: 1.3em;
+}
+main p {
+	text-indent: 2em;
+	padding: 1em;
+} 
+main ul {
+  display:flex;
+  flex-wrap: wrap;  
+  flex-direction:row;
+	
+}
+/* each item in the flex box... */
+main ul li {
+	box-sizing: border-box;
+	list-style: none;
+	width: 33.33333333%;
+	background-color: hsla(180,22%,88%,1.00);
+	padding: 1em;
+}
+footer {
+	background-color: hsla(180,92%,98%,1.00);
+	border-top: 1px solid lightgray;
+	padding: 2em;
 }
