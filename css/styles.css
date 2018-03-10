@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700');
+@import url('normalize.css');
+
+
+
+body {
+	font-family: 'Karma', serif;
+	background-color: hsla(164,50%,95%,1.00)
+}
+#wrapper{
+	max-width:1250px;width: 90%;
+	margin: auto;
+	background-color: hsla(90,30%,98%,1.00);
+}
+header {
+	background-color: hsla(180,82%,98%,1.00);
+	border: 1px solid gray;
+	padding: 2em;
+}
+h1,h2{
+	font-weight: 300;
+		padding-left: 1em;
+}
+h3 {
+	font-weight: 500;
+}
