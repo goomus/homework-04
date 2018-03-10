@@ -13,7 +13,7 @@ body {
 }
 #wrapper{
 	position: relative;
-	min-width: 600px;
+	min-width: 1008px;
 	width: 90%;
 	margin: auto;
 	background-color: hsla(90,30%,98%,1.00);
@@ -24,15 +24,38 @@ header {
 	background-color: hsla(180,82%,98%,1.00);
 	border-bottom: 1px solid lightgray;
 	padding: 2em;
+	display: flex;
+}
+header > div {
+	flex:4
+} 
+header > nav {
+		margin-top: .7em;
+	border-left: 1px lightgray solid;
+	flex:1
+} 
+header form input{
+	width: 125px;
+	float: right;
+
+}
+header form{
+		display: inline;
+}
+header h1 {
+	font-size: 1.5em;
+	
 }
 header h2 {
 	padding-left: 2em;
+	font-size: 1.3em;
+
 }
 
 /*
 ==========--Navigation--==========
 							*/	
-nav {
+#wrapper > nav {
 	position: relative;
 	margin: 0;
 	border-bottom: 2px hsla(0,0%,88%,1.00) solid;
@@ -77,13 +100,35 @@ nav > a {
 }
 
 header img[src*="shoping"] {
-	float: right;
-	width: 30px;
+	display: block;
+	position: absolute;
+	right: 2em;
+	top: 5em;
+	width: 25px;
+	margin: 0 .3em;
 }
 header img[src*="search"] {
 	float: right;
-	width: 30px;
+	width: 20px;
+	margin: .2em .3em 0 0;
 }
+
+.icons a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 10px;
+	vertical-align: middle;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+}
+
+.icons a.twitter { background: url(../images/social-icons/twitter.png) left top no-repeat; }
+.icons a.vimeo { background: url(../images/social-icons/vimeo.png) left top no-repeat; }
+.icons a.facebook { background: url(../images/social-icons/facebook.png) left top no-repeat; }
+.icons a:hover { background-position: left -34px; }
 
 /*
 ==========--Main--==========
