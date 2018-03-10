@@ -1,6 +1,10 @@
+/*==========================*	Author: Iakov Golobokov
+----------------------------*	Sudent number: A01036539
+----------------------------*	Date:   10/3/2018
+============================*	Title:	Homework 4
+*/
 @import url('https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700');
 @import url('normalize.css');
-
 
 
 body {
@@ -8,6 +12,7 @@ body {
 	background-color: hsla(164,50%,95%,1.00)
 }
 #wrapper{
+	position: relative;
 	min-width: 600px;
 	width: 90%;
 	margin: auto;
@@ -25,7 +30,7 @@ header h2 {
 }
 
 /*
-==========--Menu--==========
+==========--Navigation--==========
 							*/	
 nav {
 	position: relative;
@@ -70,11 +75,24 @@ nav > a {
 	color: darkgray;
 	text-decoration: none;
 }
+
+header img[src*="shoping"] {
+	float: right;
+	width: 30px;
+}
+header img[src*="search"] {
+	float: right;
+	width: 30px;
+}
+
 /*
 ==========--Main--==========
 							*/	
 main {
 	padding: 1em; 
+}
+header{
+		display:flex;
 }
 h1,h2{
 	font-weight: 300;
