@@ -12,12 +12,16 @@ body {
 	width: 90%;
 	margin: auto;
 	background-color: hsla(90,30%,98%,1.00);
+	box-shadow: 0px 3px 10px hsla(90,30%,78%,1.00);;
 }
 
 header {
 	background-color: hsla(180,82%,98%,1.00);
 	border-bottom: 1px solid lightgray;
 	padding: 2em;
+}
+header h2 {
+	padding-left: 2em;
 }
 
 /*
@@ -40,16 +44,19 @@ nav li a:link {
 	text-decoration: none;
 	color: black;
 	margin-left: 2em;
+	transition: .3s ease-out;
 }
 nav li a:visited {
 	background: hsla(36,32%,55%,1.00);
 	color: hsla(35,52%,13%,1.00);
 }
 nav li a:hover {
-	color: #ed463a;
+	color: hsla(164,80%,35%,1.00)
+;
 }
 nav li a:active {
 	color: hsla(35,92%,3%,1.00);
+
 }
 nav a[href*="top"] {
 	position: fixed;
@@ -85,20 +92,86 @@ main p {
 	text-indent: 2em;
 	padding: 1em;
 } 
+
+
 main ul {
   display:flex;
   flex-wrap: wrap;  
   flex-direction:row;
-	
+	border: 1px solid hsla(0,0%,70%,1.00);
+	padding: 0;
+
 }
-/* each item in the flex box... */
 main ul li {
 	box-sizing: border-box;
 	list-style: none;
 	width: 33.33333333%;
-	background-color: hsla(180,22%,88%,1.00);
+	background-color: hsla(180,22%,78%,1.00);
 	padding: 1em;
 }
+
+main ul li:nth-child(even){
+
+	background-color:hsla(143,22%,78%,1.00);
+}
+main ul li:hover {
+
+	background-color: hsla(180,22%,68%,1.00);
+
+}
+
+/*
+==========--Form--==========
+							*/	
+fieldset {
+	border: 4px hsla(0,0%,90%,1.00) double;
+	margin: 2em;
+	font-weight: 500;
+}
+form fieldset:first-child label {
+	display: block;
+	margin-top: .8em;
+	font-size: .9em;
+	font-weight: 400;
+}
+form fieldset:nth-of-type(2) input {
+	margin-bottom: .8em;
+}
+form fieldset:nth-of-type(2) label {
+	font-size: .9em;
+	font-weight: 400;
+}
+form fieldset input[type*="submit"] {
+	margin: 1em;
+}
+
+/*
+==========--table--==========
+							*/	
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+	font-weight: 500;
+	background-color: hsla(158,62%,77%,1.00);
+	   border-bottom: 1px hsla(158,62%,37%,1.00) solid;
+
+}
+tr:nth-child(even) {
+    background-color: hsla(158,0%,87%,1.00);
+}
+
+
+/*
+==========--Footer--==========
+							*/	
 footer {
 	background-color: hsla(180,92%,98%,1.00);
 	border-top: 1px solid lightgray;
