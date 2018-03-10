@@ -24,3 +24,39 @@ h1,h2{
 h3 {
 	font-weight: 500;
 }
+/*
+==========--Menu--==========
+							*/	
+nav {
+	margin: 0;
+	border-bottom: 2px gray solid;
+}
+nav ul {
+	display: inline-block;
+}
+nav li {
+	float: left;
+	list-style: none;
+}
+nav li a:link {
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-left: 2em;
+}
+nav li a:visited {
+	background: hsla(36,32%,55%,1.00);
+	color: hsla(35,52%,13%,1.00);
+}
+nav li a:hover {
+	color: #ed463a;
+}
+nav li a:active {
+	color: hsla(35,92%,3%,1.00);
+}
+nav a[href*="top"] {
+	position: fixed;
+	top:1%;
+	left: 1%;
+	color: gray;
+}
