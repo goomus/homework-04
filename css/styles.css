@@ -92,7 +92,7 @@ nav a[href*="top"] {
 	left: 1%;
 	color: gray;
 }
-nav > a {
+#wrapper > nav > a {
 	float: right;
 	margin: 1em;
 	color: darkgray;
@@ -113,22 +113,44 @@ header img[src*="search"] {
 	margin: .2em .3em 0 0;
 }
 
-.icons a {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	margin: 10px;
-	vertical-align: middle;
-	-o-transition: all .3s;
-	-moz-transition: all .3s;
-	-webkit-transition: all .3s;
-	-ms-transition: all .3s;
+
+.social-media-icons {
+	float: right;
+	list-style: none;
+    padding: 0;
 }
 
-.icons a.twitter { background: url(../images/social-icons/twitter.png) left top no-repeat; }
-.icons a.vimeo { background: url(../images/social-icons/vimeo.png) left top no-repeat; }
-.icons a.facebook { background: url(../images/social-icons/facebook.png) left top no-repeat; }
-.icons a:hover { background-position: left -34px; }
+.social-media-icons li {
+    display: inline-block;
+}
+
+.social-media-icons a {
+
+    background-image: url(../images/social-icons/social-icons.svg);
+    background-repeat: no-repeat;
+    display: block;
+	float: left;
+    height: 58px;
+	margin-left: 3px;
+    transition: all 350ms ease-out;
+    width: 50px;
+	opacity: 0.5;
+
+}
+
+.social-media-icons a:hover {
+    opacity: 1;
+}
+.twitter {
+    background-position: 0 0;
+}
+.vimeo {
+    background-position: -212px -60px;
+}
+
+.facebook {
+    background-position: -53px 0;
+}
 
 /*
 ==========--Main--==========
@@ -239,4 +261,9 @@ footer {
 	background-color: hsla(180,92%,98%,1.00);
 	border-top: 1px solid lightgray;
 	padding: 2em;
+	overflow: auto;
+}
+footer p {
+	text-align: center;
+	float: left;
 }
